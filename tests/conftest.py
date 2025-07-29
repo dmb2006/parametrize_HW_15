@@ -29,7 +29,11 @@ def browser_configuration(request):
         (1600, 900),
         (1280, 720)
     ],
-    ids=["2560x1440", "1920x1080", "1600x900", "1280x720"]
+    ids=["screen-resolution 2560x1440",
+         "screen-resolution 1920x1080",
+         "screen-resolution 1600x900",
+         "screen-resolution 1280x720"
+    ]
 )
 def browser_desktop_configuration(request):
     width, height = request.param
@@ -45,7 +49,11 @@ def browser_desktop_configuration(request):
         (390, 844),
         (320, 658)
     ],
-    ids=["2560x1440", "1920x1080", "1600x900", "1280x720"]
+    ids=["screen-resolution 425x768",
+         "screen-resolution 414x896",
+         "screen-resolution 390x844",
+         "screen-resolution 320x658"
+         ]
 )
 def browser_mobile_configuration(request):
     width, height = request.param
